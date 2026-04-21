@@ -12,7 +12,7 @@ function App() {
           <span className="text-emerald-500 font-bold tracking-widest uppercase text-sm">
             Misiones, Argentina
           </span>
-          <h2 className="text-2xl md:text-8xl font-extrabold text-white leading-tight">
+          <h2 className="text-3xl md:text-7xl font-extrabold text-white leading-tight">
             Naturaleza <br /> 
             <span className="text-emerald-500">Monumental.</span>
           </h2>
