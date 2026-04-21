@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@keyframes rainbow-green {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-rainbow-green {
+  background: linear-gradient(90deg, #4ade80, #10b981, #84cc16, #4ade80);
+  background-size: 300% 100%;
+}
+
+.btn-rainbow-green:hover {
+  animation: rainbow-green 2s linear infinite;
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
