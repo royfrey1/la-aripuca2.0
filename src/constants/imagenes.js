@@ -7,6 +7,7 @@ export const aripukaData = {
     { id: 3, url: `${S3_BASE_URL}/paisajes/paisaje-2.jpg`, desc: "Vista lateral" },
     { id: 4, url: `${S3_BASE_URL}/paisajes/paisaje-3.jpg`, desc: "Vista frontal durante la noche" },
     { id: 5, url: `${S3_BASE_URL}/paisajes/paisaje-5.jpg`, desc: "El Tacurú" },
+    { id: 6, url: `${S3_BASE_URL}/paisajes/paisaje-6.jpg`, desc: "Vista a laguna" },
   ],
   maderas: [
     { id: 1, url: `${S3_BASE_URL}/maderas/madera.jpg`, nombre: "Lapacho Negro" },
