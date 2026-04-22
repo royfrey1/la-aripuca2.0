@@ -4,7 +4,7 @@ import SaborCard from './SaborCard';
 
 const Sabores = () => {
   return (
-    <section className="max-w-7xl mx-auto px-8 py-24">
+    <section id="sabores" className="scroll-mt-18 max-w-7xl mx-auto px-8 py-24">
       <div className="mb-12">
         <h2 className="text-4xl font-black text-white tracking-tighter italic">SABORES LOCALES</h2>
         <p className="text-emerald-400 font-mono text-sm mt-2">/ experiencia-3d</p>

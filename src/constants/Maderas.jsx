@@ -11,7 +11,7 @@ export default function Maderas() {
     return (
             
     
-        <section className="max-w-7xl mx-auto px-8 py-20">
+        <section id="maderas" className="max-w-7xl mx-auto px-8 py-20 scroll-mt-18">
             <div className="mb-10">
                 <h3 className="text-4xl font-black text-white italic tracking-tighter">LAS MADERAS</h3>
                 <p className="text-emerald-500 font-mono text-sm">/ especies-recuperadas</p>

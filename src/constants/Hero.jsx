@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
     return (
-        <main className="max-w-7xl mx-auto px-8 py-20 grid lg:grid-cols-2 gap-16 items-center">
+        <main id="hero" className="max-w-7xl mx-auto px-8 py-20 grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
                 <span className="text-emerald-500 font-bold tracking-widest uppercase text-sm">
                    Iguazu, Misiones, Argentina

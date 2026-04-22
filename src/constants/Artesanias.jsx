@@ -10,7 +10,7 @@ export default function Artesanias() {
     };
     return (   
             
-        <section className="bg-slate-900/30 py-24 overflow-hidden">
+        <section id="artesanias" className="scroll-mt-18 bg-slate-900/30 py-24 overflow-hidden">
             <div className="max-w-7xl mx-auto px-8">
                 <div className="flex justify-between items-end mb-12">
                     <div>

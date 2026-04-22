@@ -17,17 +17,17 @@ const [isScrolled, setIsScrolled] = React.useState(false);
   return (
     <div className="bg-[#050810] text-slate-300 font-sans selection:bg-emerald-500/30">
       {/* Navbar con estilo Mac-Dock */}
-      <div className="fixed top-0 left-0 w-full z-[100] flex justify-center p-4 transition-all duration-500">
+      <div className={`fixed top-0 left-1/2 -translate-x-1/2 w-full z-50 flex justify-center p-4 transition-all duration-500 ${isScrolled ? 'top-4 w-auto' : 'top-0 w-full max-w-7xl'}`}>
         <nav className={`
           flex justify-between items-center transition-all duration-500 ease-in-out
           ${isScrolled 
-            ? 'w-[95%] md:w-[70%] max-w-5xl bg-slate-900/80 backdrop-blur-md border border-white/10 py-3 px-8 rounded-full shadow-2xl' 
-            : 'w-full max-w-7xl bg-transparent py-6 px-8 rounded-none'
+            ? 'gap-8 px-6 py-3 bg-emerald-500/10 backdrop-blur-md rounded-full border border-emerald-500' 
+            : 'gap-12 px-10 py-6 bg-transparent'
           }
         `}>
-          <h1 className="text-2xl font-black tracking-tighter text-white">
-            LA <span className="text-emerald-500">ARIPUCA</span>
-          </h1>
+          <a  className="text-2xl font-black tracking-tighter text-white" href="#hero">
+            LA <span id="logo" className="text-emerald-500">ARIPUCA</span>
+          </a>
           
           <div className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-[0.2em]">
             <a href="#paisajes" className="text-white hover:text-emerald-400 transition-colors">Entorno</a>
