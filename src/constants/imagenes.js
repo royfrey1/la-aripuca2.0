@@ -10,18 +10,18 @@ export const aripukaData = {
     { id: 6, url: `${S3_BASE_URL}/paisajes/paisaje-6.jpg`, desc: "Vista a laguna" },
   ],
   maderas: [
-    { id: 1, url: `${S3_BASE_URL}/maderas/madera.jpg`, nombre: "Lapacho Negro" },
-    { id: 2, url: `${S3_BASE_URL}/maderas/madera-1.jpg`, nombre: "Cedro Misionero" },
-    { id: 3, url: `${S3_BASE_URL}/maderas/madera-2.jpg`, nombre: "Sombra de Toro" },
-    { id: 4, url: `${S3_BASE_URL}/maderas/madera-3.jpg`, nombre: "Cedro Misionero" },
-    { id: 5, url: `${S3_BASE_URL}/maderas/madera4.jpg`, nombre: "Cedro Misionero" },
-    { id: 6, url: `${S3_BASE_URL}/maderas/madera6.jpg`, nombre: "Cedro Misionero" },
+    { id: 1, url: `${S3_BASE_URL}/maderas/madera.jpg`, nombre: "Guaicá, Laurel, Camboatá" },
+    { id: 2, url: `${S3_BASE_URL}/maderas/madera-1.jpg`, nombre: "Palo Amargo, Pino-Araucaria, Ceibo" },
+    { id: 3, url: `${S3_BASE_URL}/maderas/madera-2.jpg`, nombre: "Azota-Caballo, Incienso" },
+    { id: 4, url: `${S3_BASE_URL}/maderas/madera-3.jpg`, nombre: "Corte y vista del interior del árbol" },
+    { id: 5, url: `${S3_BASE_URL}/maderas/madera4.jpg`, nombre: "Entrada del parque" },
+    { id: 6, url: `${S3_BASE_URL}/maderas/madera6.jpg`, nombre: "Caroba" },
 
 ],
   artesanias: [
     { id: 1, url: `${S3_BASE_URL}/Artesanias/trampa.jpg`, item: "Trampa de madera" },
     { id: 2, url: `${S3_BASE_URL}/Artesanias/artesanias-1.jpg`, item: "Arte tallado" },
-    { id: 3, url: `${S3_BASE_URL}/Artesanias/artesanias.jpg`, item: "Arte tallado" },
-    { id: 4, url: `${S3_BASE_URL}/Artesanias/artesanias-3.jpg`, item: "Arte tallado" },
+    { id: 3, url: `${S3_BASE_URL}/Artesanias/artesanias.jpg`, item: "Artesanias indigenas" },
+    { id: 4, url: `${S3_BASE_URL}/Artesanias/artesanias-3.jpg`, item: "Artesanias indigenas" },
   ]
 }; 

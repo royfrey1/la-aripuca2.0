@@ -1,5 +1,5 @@
 import React from "react";
-
+import { aripukaData } from './imagenes.js';
 
 export default function Paisajes() {
 
