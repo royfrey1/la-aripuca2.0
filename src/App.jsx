@@ -5,6 +5,7 @@ import Hero from './constants/Hero.jsx';
 import Paisajes from './constants/Paisajes.jsx';
 import Artesanias from './constants/Artesanias.jsx';
 import Maderas from './constants/Maderas.jsx'; 
+import Sabores from './constants/Sabores.jsx';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Paisajes />
       <Artesanias />
       <Maderas />
+      <Sabores />
+      
     </div>
     
   );
