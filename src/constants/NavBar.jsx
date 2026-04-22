@@ -30,9 +30,11 @@ const [isScrolled, setIsScrolled] = React.useState(false);
           </h1>
           
           <div className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-[0.2em]">
-            <a href="#" className="text-white hover:text-emerald-400 transition-colors">Cultura</a>
-            <a href="#" className="text-white hover:text-emerald-400 transition-colors">Arquitectura</a>
-            <a href="#" className="text-white hover:text-emerald-400 transition-colors">Contacto</a>
+            <a href="#paisajes" className="text-white hover:text-emerald-400 transition-colors">Entorno</a>
+            <a href="#artesanias" className="text-white hover:text-emerald-400 transition-colors">Artesanias</a>
+            <a href="#maderas" className="text-white hover:text-emerald-400 transition-colors">Maderas recuperadas</a>
+            <a href="#sabores" className="text-white hover:text-emerald-400 transition-colors">Sabores artesanales</a>
+            <a href="#contacto" className="text-white hover:text-emerald-400 transition-colors">Contactanos</a>  
           </div>
         </nav>
       </div>
