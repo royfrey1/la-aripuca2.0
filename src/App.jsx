@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { aripukaData } from './constants/imagenes.js';
 import NavBar from './constants/NavBar.jsx';
 import Hero from './constants/Hero.jsx';
@@ -10,11 +10,21 @@ import { VideoTour } from './constants/VideoTour.jsx';
 import { Footer }  from './constants/Footer.jsx';
 
 function App() {
-
+  const [darkMode, setDarkMode] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
+
+
   return (
-    <div className="min-h-screen bg-[#050810] text-slate-300 font-sans selection:bg-emerald-500/30">
-      <NavBar />
+    <div className="min-h-screen bg-[#D8BF9F] dark:bg-[#050810] text-slate-300 font-sans selection:bg-emerald-500/30">
+      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <Paisajes onImageClick={setSelectedImage} />
       <Artesanias />
@@ -34,7 +44,7 @@ function App() {
         href="https://wa.me/+543757554313" // Reemplaza con tu número real
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-8 right-8 z-50 flex items-center bg-[#25D366] text-white p-4 rounded-[2rem] shadow-2xl transition-all duration-700 ease-in-out group hover:rounded-2xl max-w-[60px] hover:max-w-[320px] overflow-hidden"
+        className="fixed bottom-30 right-8 z-50 flex items-center bg-[#25D366] text-white p-4 rounded-[2rem] shadow-2xl transition-all duration-700 ease-in-out group hover:rounded-2xl max-w-[60px] hover:max-w-[320px] overflow-hidden"
       >
         {/* Icono de WhatsApp (SVG para que no pierda calidad) */}
         <svg 
