@@ -13,22 +13,22 @@ export default function Maderas() {
     
         <section id="maderas" className="max-w-7xl mx-auto px-8 py-20 scroll-mt-18">
             <div className="mb-10">
-                <h3 className="text-4xl font-black text-white italic tracking-tighter">LAS MADERAS</h3>
-                <p className="text-emerald-500 font-mono text-sm">/ especies-recuperadas</p>
+                <h3 className="text-4xl font-black text-[#260101] dark:text-white italic tracking-tighter">LAS MADERAS</h3>
+                <p className="text-[#260101]/60 dark:text-emerald-500 font-mono text-large">/ Especies recuperadas</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {aripukaData.maderas.map((m) => (
                 <div 
                     key={m.id} 
                     onClick={() => setSelectedImage(m.url)} // Al hacer click, se guarda la URL de la imagen seleccionada
-                    className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-all cursor-pointer hover:scale-[1.02]"
+                    className="flex items-center gap-4 bg-[#A69856]/40 p-4 rounded-xl border border-[#697E3F] hover:bg-[#697E3F]/40 transition-all cursor-pointer dark:bg-white/10 dark:hover:bg-white/20 dark:border-emerald-500/30 dark:hover:border-emerald-500 hover:scale-[1.02]"
                 >
                     <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
                     <img src={m.url} className="w-full h-full object-cover" alt={m.nombre} />
                     </div>
                     <div>
-                    <h4 className="text-white font-bold">{m.nombre}</h4>
-                    <p className="text-xs text-slate-500 uppercase">Click para ampliar</p>
+                    <h4 className="text-[#260101] dark:text-white font-bold">{m.nombre}</h4>
+                    <p className="text-xs text-[#260101]/60 dark:text-emerald-500 uppercase">Click para ampliar</p>
                     </div>
                 </div>
                 ))}
