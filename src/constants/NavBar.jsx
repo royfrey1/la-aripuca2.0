@@ -27,11 +27,10 @@ export default function NavBar( { darkMode, setDarkMode } ) {
 
  return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center">
-      {/* ← Sacamos el div con bg-[#050810] que estaba acá */}
       <div className={`fixed top-0 left-1/2 -translate-x-1/2 w-full z-50 flex justify-center pt-0 p-4 transition-all duration-500 ${isScrolled ? 'top-4 w-auto' : 'top-0 w-full max-w-7xl'}`}>
           <nav className={`w-full transition-all duration-500 ease-in-out
             ${isScrolled
-              ? 'px-9 py-3 bg-[#A66F5B] dark:bg-emerald-500/10 backdrop-blur-md rounded-2xl border border-[#260101] dark:border-emerald-500 bg-[#D8BF9F]/80 border-[#A69856]'
+              ? 'px-9 py-3 dark:bg-emerald-500/10 backdrop-blur-md rounded-2xl border border-[#260101] dark:border-emerald-500 bg-[#BF8450]/40 border-[#A69856]'
               : 'px-10 py-6 bg-transparent'
             }
           `}>
@@ -43,7 +42,7 @@ export default function NavBar( { darkMode, setDarkMode } ) {
               {/* Links desktop */}
               <div className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-[0.2em]">
                 {navLinks.map(({ href, label }) => (
-                  <a key={href} href={href} className="text-[#260101] hover:text-[#BF8450] dark:text-white dark:hover:text-emerald-400 transition-colors">
+                  <a key={href} href={href} className="text-[#260101] hover:text-[#260101]/50 dark:text-white dark:hover:text-emerald-400 transition-colors">
                     {label}
                   </a>
                 ))}
@@ -52,7 +51,7 @@ export default function NavBar( { darkMode, setDarkMode } ) {
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => setDarkMode(!darkMode)}
-                  className="p-3 rounded-2xl border border-[#BF8450] hover:border-[#A69856]/50 hover:bg-[#BF8450]/10 dark:border-emerald-500/30 dark:hover:border-emerald-500 dark:hover:bg-emerald-500/10 transition-all"
+                  className="p-3 rounded-2xl border border-[#260101] hover:border-[#260101]/50 hover:bg-[#BF8450]/10 dark:border-emerald-500/30 dark:hover:border-emerald-500 dark:hover:bg-emerald-500/10 transition-all"
                   aria-label="Cambiar modo de color"
                 >
                   {darkMode ? (
@@ -62,7 +61,7 @@ export default function NavBar( { darkMode, setDarkMode } ) {
                     </svg>
                   ) : (
                     // Light mode activo → mostrá sol
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#BF8450]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#260101] hover:text-[#260101]/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
                     </svg>
                   )}

@@ -7,7 +7,7 @@ export default function Paisajes() {
         <section id="paisajes" className="max-w-7xl scroll-mt-18 mx-auto px-8 py-16">
                 <div className="mb-10">
                   <h3 className="text-4xl font-black text-[#260101] dark:text-white italic tracking-tighter">EL ENTORNO</h3>
-                  <p className="text-[#BF8450] dark:text-emerald-500 font-mono text-large">/ Paisajes Nativos</p>
+                  <p className="text-[#260101]/60 dark:text-emerald-500 font-mono text-large">/ Paisajes Nativos</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {aripukaData.paisajes.map((p) => (

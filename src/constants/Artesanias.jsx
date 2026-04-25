@@ -14,15 +14,15 @@ export default function Artesanias() {
             <div className="max-w-7xl mx-auto px-8">
                 <div className="flex justify-between items-end mb-12">
                     <div>
-                        <h3 className="text-4xl font-black text-white italic tracking-tighter uppercase">Artesanías</h3>
-                        <p className="text-emerald-500 font-mono text-sm">/ cultura-guarani</p>
+                        <h3 className="text-4xl font-black text-[#260101] dark:text-white italic tracking-tighter uppercase">ARTESANIAS</h3>
+                        <p className="text-[#260101]/60 dark:text-emerald-500 font-mono text-large">/ Cultura guarani</p>
                     </div>
                     
                     {/* Botones de Navegación (Estilo Minimalista) */}
                     <div className="flex gap-4">
                         <button 
                             onClick={() => scroll(-300)}
-                            className="p-3 rounded-full border border-white/10 bg-white/5 hover:bg-emerald-500 hover:text-slate-900 transition-all"
+                            className="p-3 rounded-full border border-[#260101]/60 bg-white/5 hover:bg-[#A69856]/40 dark:border-emerald-500 dark:hover:bg-emerald-700 dark:hover:text-slate-900 transition-all"
                             >
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -30,7 +30,7 @@ export default function Artesanias() {
                         </button>
                         <button 
                             onClick={() => scroll(300)}
-                            className="p-3 rounded-full border border-white/10 bg-white/5 hover:bg-emerald-500 hover:text-slate-900 transition-all"
+                            className="p-3 rounded-full border border-[#260101]/60 bg-white/5 hover:bg-[#A69856]/40 dark:border-emerald-500 dark:hover:bg-emerald-700 dark:hover:text-slate-900 transition-all"
                             >
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
