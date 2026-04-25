@@ -15,6 +15,15 @@ export default function NavBar( { darkMode, setDarkMode } ) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [menuOpen]);
 
+  React.useEffect(() => {
+  if (menuOpen) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+  return () => { document.body.style.overflow = ''; };
+}, [menuOpen]);
+
   const navLinks = [
     { href: "#paisajes", label: "Entorno" },
     { href: "#artesanias", label: "Artesanias" },
@@ -36,19 +45,19 @@ export default function NavBar( { darkMode, setDarkMode } ) {
           `}>
             <div className="flex justify-between items-center">
               <a href="#hero">
-                <img src={logo} alt="La Aripuca" className="h-18 w-auto object-contain"/>
+                <img src={logo} alt="La Aripuca" className="pr-5 h-18 lg:h-18 w-auto object-contain"/>
               </a>
 
               {/* Links desktop */}
-              <div className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-[0.2em]">
+              <div className="hidden lg:flex gap-8 text-xs font-bold uppercase tracking-[0.2em]">
                 {navLinks.map(({ href, label }) => (
-                  <a key={href} href={href} className="text-[#260101] hover:text-[#260101]/50 dark:text-white dark:hover:text-emerald-400 transition-colors">
+                  <a key={href} href={href} className="whitespace-nowrap text-[#260101] hover:text-[#260101]/50 dark:text-white dark:hover:text-emerald-400 transition-colors">
                     {label}
                   </a>
                 ))}
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="pl-5 flex items-center gap-3">
                 <button
                   onClick={() => setDarkMode(!darkMode)}
                   className="p-3 rounded-2xl border border-[#260101] hover:border-[#260101]/50 hover:bg-[#BF8450]/10 dark:border-emerald-500/30 dark:hover:border-emerald-500 dark:hover:bg-emerald-500/10 transition-all cursor-pointer"
@@ -69,18 +78,18 @@ export default function NavBar( { darkMode, setDarkMode } ) {
 
                 <button
                   onClick={() => setMenuOpen(!menuOpen)}
-                  className="md:hidden flex flex-col gap-[5px] p-4 focus:outline-none"
+                  className="lg:hidden flex flex-col gap-[5px] p-4 focus:outline-none"
                   aria-label="Abrir menú"
                 >
-                  <span className={`block w-5 h-0.5 bg-emerald-500 transition-all duration-300 ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
-                  <span className={`block w-5 h-0.5 bg-emerald-500 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-                  <span className={`block w-5 h-0.5 bg-emerald-500 transition-all duration-300 ${menuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
+                  <span className={`block w-5 h-0.5 bg-[#260101] dark:bg-emerald-500 transition-all duration-300 ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+                  <span className={`block w-5 h-0.5 bg-[#260101] dark:bg-emerald-500 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+                  <span className={`block w-5 h-0.5 bg-[#260101] dark:bg-emerald-500 transition-all duration-300 ${menuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
                 </button>
               </div>
             </div>
 
-            <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
-              <div className="flex flex-col border border-emerald-500/20 rounded-xl bg-[#D8BF9F]/95 dark:bg-[#050810]/95 backdrop-blur-md">
+            <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+              <div className="flex flex-col border border-[#260101] rounded-xl bg-[#D8BF9F]/95 dark:bg-[#050810]/95 dark:border-emerald-500/10 dark:hover:bg-white/10 backdrop-blur-md">
                 {navLinks.map(({ href, label }, i) => (
                     <a
                     key={href}
