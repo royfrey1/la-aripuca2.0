@@ -51,7 +51,7 @@ export default function NavBar( { darkMode, setDarkMode } ) {
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => setDarkMode(!darkMode)}
-                  className="p-3 rounded-2xl border border-[#260101] hover:border-[#260101]/50 hover:bg-[#BF8450]/10 dark:border-emerald-500/30 dark:hover:border-emerald-500 dark:hover:bg-emerald-500/10 transition-all"
+                  className="p-3 rounded-2xl border border-[#260101] hover:border-[#260101]/50 hover:bg-[#BF8450]/10 dark:border-emerald-500/30 dark:hover:border-emerald-500 dark:hover:bg-emerald-500/10 transition-all cursor-pointer"
                   aria-label="Cambiar modo de color"
                 >
                   {darkMode ? (
